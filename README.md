@@ -1,5 +1,5 @@
 # MouseJack
-All the details and steps needed to perform tactical mousejacking using AutoJack
+All the details and steps needed to perform mousejacking with or without Autojack.
 
 
 Mousejacking is class vulnerabilies that was discovered in 2016 by researchers at Bastille. Mousejacking is an often over looked method of gaining a foothold in a network. All the specifics about the findings including a technical write up can be found at Bastilles website. 
@@ -17,4 +17,6 @@ https://github.com/insecurityofthings/jackit#how
 Jackit injection is done using classic Ducky Script. Details on how to use Ducky Script can be found here
 https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript 
 
-Once everything is configured you can automate the scanning and injection process by installing AutoJack, making sure the payload path and file match yours.
+Once everything is configured you can automate the scanning and injection process by running AutoJack, making sure the payload path and file match yours.
+
+There seems to be an issue on ARM devices where the USB dongle gets hung, preventing successive scans. To fix this without having to physically remove the dongle I created the USBreset script. Autojack takes care of scanning, injecting the payload on all targets, and then resetting the USB, all without user interaction. 
