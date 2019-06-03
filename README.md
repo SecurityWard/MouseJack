@@ -20,3 +20,5 @@ https://github.com/hak5darren/USB-Rubber-Ducky/wiki/Duckyscript
 Once everything is configured you can automate the scanning and injection process by running AutoJack, making sure the payload path and file match yours.
 
 There seems to be an issue on ARM devices where the USB dongle gets hung, preventing successive scans. To fix this without having to physically remove the dongle I created the USBreset script. Autojack takes care of scanning, injecting the payload on all targets, and then resetting the USB, all without user interaction. 
+
+NOTE: there are some drawbacks to this type of attack. Keystrokes can get lost, mistyped, or stuck causing payloads to incorrectly execute. The target will see keystrokes being typed on their device which could cause suspicion. 
